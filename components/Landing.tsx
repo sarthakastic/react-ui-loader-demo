@@ -1,7 +1,7 @@
 "use client";
 
 import useHover3d from "@/lib/hover";
-import React, { useRef } from "react";
+import React, { useRef, useState, useEffect } from "react";
 import { ProfileShimmer, TextLoader } from "react-ui-loader";
 import { Black_Ops_One } from "next/font/google";
 import { Silkscreen } from "next/font/google";
@@ -11,6 +11,8 @@ const silkscreen = Silkscreen({ weight: "400", subsets: ["latin"] });
 
 const Landing = () => {
   const widthSize = window.innerWidth;
+
+  const [screenWidth, setScreenWidth] = useState<string>("100%");
 
   const shimmer = useRef<HTMLDivElement>(null);
   const loader = useRef<HTMLDivElement>(null);
@@ -26,6 +28,10 @@ const Landing = () => {
     z: -200,
   });
 
+  useEffect(() => {
+    widthSize < 720 ? setScreenWidth("100%") : setScreenWidth("80%");
+  }, [widthSize]);
+
   return (
     <div>
       <div
@@ -35,7 +41,7 @@ const Landing = () => {
       >
         <TextLoader
           show={true}
-          widthValue={widthSize > 720 ? "80%" : "100%"}
+          widthValue={screenWidth}
           heightValue={"100%"}
           loader={true}
           loaderStyle="DotLoader"
@@ -56,16 +62,21 @@ const Landing = () => {
           coverHeight="150px"
           profileDimension="100px"
           lineHeight="10px"
-          shimmerWidth={widthSize > 720 ? "80%" : "100%"}
-          shimmerHeight="100%"
+          shimmerWidth={screenWidth}
+          shimmerHeight={widthSize > 720 ? "100%" : "fit-content"}
+          showCards={widthSize > 720 ? true : false}
         />
       </div>
 
       <div
         className={`absolute z-0 text-4xl dark:text-blue-100 text-center text-blue-950 flex flex-col justify-center items-center h-screen w-screen `}
       >
-        <div className={blackOpsOne.className}>React UI Loader </div>
-        <div className={`${silkscreen.className} text-sm `}>
+        <div
+          className={`${blackOpsOne.className} md:text-2xl lg:text-4xl text-[#C6A969] `}
+        >
+          React UI Loader{" "}
+        </div>
+        <div className={`${silkscreen.className} text-sm text-[#D6CDA4]`}>
           A simple ui library <br /> for loaders and shimmers
         </div>
       </div>
