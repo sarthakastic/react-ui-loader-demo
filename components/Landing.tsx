@@ -36,7 +36,7 @@ const Landing = () => {
     <div>
       <div
         ref={loader}
-        className=" flex h-1/4 md:h-screen z-10 w-screen md:w-2/5 absolute  left-0 md:bottom-0 bg-gradient-to-b md:bg-gradient-to-r from-black to-transparent"
+        className=" flex h-1/4 md:h-screen z-10 w-screen md:w-2/5 absolute shadow-[0px_22px_70px_4px_rgba(0,0,0,0.56)] md:shadow-none left-0 md:bottom-0 bg-gradient-to-b md:bg-gradient-to-r from-black to-transparent"
         style={{ transform: hoverLoader.transform }}
       >
         <TextLoader
@@ -51,7 +51,7 @@ const Landing = () => {
 
       <div
         ref={shimmer}
-        className=" h-2/5 md:h-screen z-10 w-screen md:w-2/5 absolute  right-0  -bottom-20 md:bottom-0 flex justify-end bg-gradient-to-t md:bg-gradient-to-l from-black to-transparent"
+        className=" h-2/5 md:h-screen z-10 w-screen md:w-2/5 absolute shadow-[0px_22px_70px_4px_rgba(0,0,0,0.56)] md:shadow-none   right-0  -bottom-20 md:bottom-0 flex justify-end bg-gradient-to-t md:bg-gradient-to-l from-black to-transparent"
         style={{ transform: hoverShimmer.transform }}
       >
         <ProfileShimmer
@@ -81,46 +81,82 @@ const Landing = () => {
         </div>
 
         <div
-          className={`${silkscreen.className} flex text-xs md:text-lg flex-col justify-center items-center gap-4 md:mt-10 font-thin `}
+          className={`${silkscreen.className} flex text-xs md:text-sm flex-col justify-center items-center gap-4 mt-10 font-thin `}
         >
           <a
             href="#_"
-            className="relative px-5 py-3 overflow-hidden font-medium text-[#D6CDA4] bg-[#C6A969]  border border-[#D6CDA4]  rounded-lg shadow-inner group"
+            className="relative inline-flex items-center justify-center p-4 px-6 py-3 overflow-hidden font-medium text-[#C6A969] transition duration-300 ease-out border-2 border-[#C6A969] rounded-full shadow-md group"
           >
-            <span className="absolute top-0 left-0 w-0 h-0 transition-all duration-200 border-t-2 border-[#D6CDA4] bg-[#D6CDA4] group-hover:w-full ease"></span>
-            <span className="absolute bottom-0 right-0 w-0 h-0 transition-all duration-200 border-b-2 border-[#D6CDA4] bg-[#D6CDA4] group-hover:w-full ease"></span>
-            <span className="absolute top-0 left-0 w-full h-0 transition-all duration-300 delay-200 bg-[#D6CDA4] group-hover:h-full ease"></span>
-            <span className="absolute bottom-0 left-0 w-full h-0 transition-all duration-300 delay-200 bg-[#D6CDA4] group-hover:h-full ease"></span>
-            <span className="absolute inset-0 w-full h-full duration-300 delay-300 bg-[#D6CDA4] opacity-0 group-hover:opacity-100"></span>
-            <span className="relative transition-colors duration-300 delay-200 group-hover:text-[#C6A969] ease">
-              Read Documentation
+            <span className="absolute inset-0 flex items-center justify-center w-full h-full text-[#D6CDA4] duration-300 -translate-x-full bg-[#C6A969] group-hover:translate-x-0 ease">
+              <svg
+                className="w-6 h-6"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M14 5l7 7m0 0l-7 7m7-7H3"
+                ></path>
+              </svg>
             </span>
+            <span className="absolute flex items-center justify-center w-full h-full text-[#C6A969] transition-all duration-300 transform group-hover:translate-x-full ease">
+              View Documentation
+            </span>
+            <span className="relative invisible">Button Text</span>
           </a>
           <a
             href="#_"
-            className="relative px-5 py-3 overflow-hidden font-medium text-[#D6CDA4] bg-[#C6A969]  border border-[#D6CDA4]  rounded-lg shadow-inner group"
+            className="relative inline-flex items-center justify-center p-4 px-6 py-3 overflow-hidden font-medium text-[#C6A969] transition duration-300 ease-out border-2 border-[#C6A969] rounded-full shadow-md group"
           >
-            <span className="absolute top-0 left-0 w-0 h-0 transition-all duration-200 border-t-2 border-[#D6CDA4] bg-[#D6CDA4] group-hover:w-full ease"></span>
-            <span className="absolute bottom-0 right-0 w-0 h-0 transition-all duration-200 border-b-2 border-[#D6CDA4] bg-[#D6CDA4] group-hover:w-full ease"></span>
-            <span className="absolute top-0 left-0 w-full h-0 transition-all duration-300 delay-200 bg-[#D6CDA4] group-hover:h-full ease"></span>
-            <span className="absolute bottom-0 left-0 w-full h-0 transition-all duration-300 delay-200 bg-[#D6CDA4] group-hover:h-full ease"></span>
-            <span className="absolute inset-0 w-full h-full duration-300 delay-300 bg-[#D6CDA4] opacity-0 group-hover:opacity-100"></span>
-            <span className="relative transition-colors duration-300 delay-200 group-hover:text-[#C6A969] ease">
+            <span className="absolute inset-0 flex items-center justify-center w-full h-full text-[#D6CDA4] duration-300 -translate-x-full bg-[#C6A969] group-hover:translate-x-0 ease">
+              <svg
+                className="w-6 h-6"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M14 5l7 7m0 0l-7 7m7-7H3"
+                ></path>
+              </svg>
+            </span>
+            <span className="absolute flex items-center justify-center w-full h-full text-[#C6A969] transition-all duration-300 transform group-hover:translate-x-full ease">
               View Loader Demo
             </span>
+            <span className="relative invisible">Button Text</span>
           </a>
           <a
             href="#_"
-            className="relative px-5 py-3 overflow-hidden font-medium text-[#D6CDA4] bg-[#C6A969]  border border-[#D6CDA4]  rounded-lg shadow-inner group"
+            className="relative inline-flex items-center justify-center p-4 px-6 py-3 overflow-hidden font-medium text-[#C6A969] transition duration-300 ease-out border-2 border-[#C6A969] rounded-full shadow-md group"
           >
-            <span className="absolute top-0 left-0 w-0 h-0 transition-all duration-200 border-t-2 border-[#D6CDA4] bg-[#D6CDA4] group-hover:w-full ease"></span>
-            <span className="absolute bottom-0 right-0 w-0 h-0 transition-all duration-200 border-b-2 border-[#D6CDA4] bg-[#D6CDA4] group-hover:w-full ease"></span>
-            <span className="absolute top-0 left-0 w-full h-0 transition-all duration-300 delay-200 bg-[#D6CDA4] group-hover:h-full ease"></span>
-            <span className="absolute bottom-0 left-0 w-full h-0 transition-all duration-300 delay-200 bg-[#D6CDA4] group-hover:h-full ease"></span>
-            <span className="absolute inset-0 w-full h-full duration-300 delay-300 bg-[#D6CDA4] opacity-0 group-hover:opacity-100"></span>
-            <span className="relative transition-colors duration-300 delay-200 group-hover:text-[#C6A969] ease">
+            <span className="absolute inset-0 flex items-center justify-center w-full h-full text-[#D6CDA4] duration-300 -translate-x-full bg-[#C6A969] group-hover:translate-x-0 ease">
+              <svg
+                className="w-6 h-6"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M14 5l7 7m0 0l-7 7m7-7H3"
+                ></path>
+              </svg>
+            </span>
+            <span className="absolute flex items-center justify-center w-full h-full text-[#C6A969] transition-all duration-300 transform group-hover:translate-x-full ease">
               View Shimmer Demo
             </span>
+            <span className="relative invisible">Button Text</span>
           </a>
         </div>
       </div>
