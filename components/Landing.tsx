@@ -36,7 +36,7 @@ const Landing = () => {
     <div>
       <div
         ref={loader}
-        className=" flex h-2/5 md:h-screen z-10 w-screen md:w-2/5 absolute  left-0 md:bottom-0 bg-gradient-to-b md:bg-gradient-to-r from-black to-transparent"
+        className=" flex h-1/4 md:h-screen z-10 w-screen md:w-2/5 absolute  left-0 md:bottom-0 bg-gradient-to-b md:bg-gradient-to-r from-black to-transparent"
         style={{ transform: hoverLoader.transform }}
       >
         <TextLoader
@@ -51,7 +51,7 @@ const Landing = () => {
 
       <div
         ref={shimmer}
-        className=" h-2/5 md:h-screen z-10 w-screen md:w-2/5 absolute  right-0 bottom-0 flex justify-end bg-gradient-to-t md:bg-gradient-to-l from-black to-transparent"
+        className=" h-2/5 md:h-screen z-10 w-screen md:w-2/5 absolute  right-0  -bottom-20 md:bottom-0 flex justify-end bg-gradient-to-t md:bg-gradient-to-l from-black to-transparent"
         style={{ transform: hoverShimmer.transform }}
       >
         <ProfileShimmer
@@ -78,6 +78,50 @@ const Landing = () => {
         </div>
         <div className={`${silkscreen.className} text-sm text-[#D6CDA4]`}>
           A simple ui library <br /> for loaders and shimmers
+        </div>
+
+        <div
+          className={`${silkscreen.className} flex text-xs md:text-lg flex-col justify-center items-center gap-4 md:mt-10 font-thin `}
+        >
+          <a
+            href="#_"
+            className="relative px-5 py-3 overflow-hidden font-medium text-[#D6CDA4] bg-[#C6A969]  border border-[#D6CDA4]  rounded-lg shadow-inner group"
+          >
+            <span className="absolute top-0 left-0 w-0 h-0 transition-all duration-200 border-t-2 border-[#D6CDA4] bg-[#D6CDA4] group-hover:w-full ease"></span>
+            <span className="absolute bottom-0 right-0 w-0 h-0 transition-all duration-200 border-b-2 border-[#D6CDA4] bg-[#D6CDA4] group-hover:w-full ease"></span>
+            <span className="absolute top-0 left-0 w-full h-0 transition-all duration-300 delay-200 bg-[#D6CDA4] group-hover:h-full ease"></span>
+            <span className="absolute bottom-0 left-0 w-full h-0 transition-all duration-300 delay-200 bg-[#D6CDA4] group-hover:h-full ease"></span>
+            <span className="absolute inset-0 w-full h-full duration-300 delay-300 bg-[#D6CDA4] opacity-0 group-hover:opacity-100"></span>
+            <span className="relative transition-colors duration-300 delay-200 group-hover:text-[#C6A969] ease">
+              Read Documentation
+            </span>
+          </a>
+          <a
+            href="#_"
+            className="relative px-5 py-3 overflow-hidden font-medium text-[#D6CDA4] bg-[#C6A969]  border border-[#D6CDA4]  rounded-lg shadow-inner group"
+          >
+            <span className="absolute top-0 left-0 w-0 h-0 transition-all duration-200 border-t-2 border-[#D6CDA4] bg-[#D6CDA4] group-hover:w-full ease"></span>
+            <span className="absolute bottom-0 right-0 w-0 h-0 transition-all duration-200 border-b-2 border-[#D6CDA4] bg-[#D6CDA4] group-hover:w-full ease"></span>
+            <span className="absolute top-0 left-0 w-full h-0 transition-all duration-300 delay-200 bg-[#D6CDA4] group-hover:h-full ease"></span>
+            <span className="absolute bottom-0 left-0 w-full h-0 transition-all duration-300 delay-200 bg-[#D6CDA4] group-hover:h-full ease"></span>
+            <span className="absolute inset-0 w-full h-full duration-300 delay-300 bg-[#D6CDA4] opacity-0 group-hover:opacity-100"></span>
+            <span className="relative transition-colors duration-300 delay-200 group-hover:text-[#C6A969] ease">
+              View Loader Demo
+            </span>
+          </a>
+          <a
+            href="#_"
+            className="relative px-5 py-3 overflow-hidden font-medium text-[#D6CDA4] bg-[#C6A969]  border border-[#D6CDA4]  rounded-lg shadow-inner group"
+          >
+            <span className="absolute top-0 left-0 w-0 h-0 transition-all duration-200 border-t-2 border-[#D6CDA4] bg-[#D6CDA4] group-hover:w-full ease"></span>
+            <span className="absolute bottom-0 right-0 w-0 h-0 transition-all duration-200 border-b-2 border-[#D6CDA4] bg-[#D6CDA4] group-hover:w-full ease"></span>
+            <span className="absolute top-0 left-0 w-full h-0 transition-all duration-300 delay-200 bg-[#D6CDA4] group-hover:h-full ease"></span>
+            <span className="absolute bottom-0 left-0 w-full h-0 transition-all duration-300 delay-200 bg-[#D6CDA4] group-hover:h-full ease"></span>
+            <span className="absolute inset-0 w-full h-full duration-300 delay-300 bg-[#D6CDA4] opacity-0 group-hover:opacity-100"></span>
+            <span className="relative transition-colors duration-300 delay-200 group-hover:text-[#C6A969] ease">
+              View Shimmer Demo
+            </span>
+          </a>
         </div>
       </div>
     </div>
