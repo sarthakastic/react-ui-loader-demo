@@ -5,6 +5,7 @@ import React, { useRef, useState, useEffect } from "react";
 import { ProfileShimmer, TextLoader } from "react-ui-loader";
 import { Black_Ops_One } from "next/font/google";
 import { Silkscreen } from "next/font/google";
+import Link from "next/link";
 
 const blackOpsOne = Black_Ops_One({ weight: "400", subsets: ["latin"] });
 const silkscreen = Silkscreen({ weight: "400", subsets: ["latin"] });
@@ -72,22 +73,23 @@ const Landing = () => {
         className={`absolute z-0 text-4xl dark:text-blue-100 text-center text-blue-950 flex flex-col justify-center items-center h-screen w-screen `}
       >
         <div
-          className={`${blackOpsOne.className} md:text-2xl lg:text-4xl text-[#C6A969] `}
+          className={`${blackOpsOne.className} md:text-2xl lg:text-4xl text-secondaryLight `}
         >
           React UI Loader{" "}
         </div>
-        <div className={`${silkscreen.className} text-sm text-[#D6CDA4]`}>
-          A simple ui library <br /> for loaders and shimmers
+        <div className={`${silkscreen.className} text-sm text-primaryLight`}>
+          A simple, lightweight &
+          <br /> customisable ui library <br /> for loaders and shimmers
         </div>
 
         <div
           className={`${silkscreen.className} flex text-xs md:text-sm flex-col justify-center items-center gap-4 mt-10 font-thin `}
         >
-          <a
-            href="#_"
-            className="relative inline-flex items-center justify-center p-4 px-6 py-3 overflow-hidden font-medium text-[#C6A969] transition duration-300 ease-out border-2 border-[#C6A969] rounded-full shadow-md group"
+          <Link
+            href="/documentation"
+            className="relative inline-flex items-center justify-center p-4 px-6 py-3 overflow-hidden font-medium text-secondaryLight transition duration-300 ease-out border-2 border-secondaryLight rounded-full shadow-md group"
           >
-            <span className="absolute inset-0 flex items-center justify-center w-full h-full text-[#D6CDA4] duration-300 -translate-x-full bg-[#C6A969] group-hover:translate-x-0 ease">
+            <span className="absolute inset-0 flex items-center justify-center w-full h-full text-primaryLight duration-300 -translate-x-full bg-secondaryLight group-hover:translate-x-0 ease">
               <svg
                 className="w-6 h-6"
                 fill="none"
@@ -103,16 +105,16 @@ const Landing = () => {
                 ></path>
               </svg>
             </span>
-            <span className="absolute flex items-center justify-center w-full h-full text-[#C6A969] transition-all duration-300 transform group-hover:translate-x-full ease">
+            <span className="absolute flex items-center justify-center w-full h-full text-secondaryLight transition-all duration-300 transform group-hover:translate-x-full ease">
               View Documentation
             </span>
             <span className="relative invisible">Button Text</span>
-          </a>
+          </Link>
           <a
             href="#_"
-            className="relative inline-flex items-center justify-center p-4 px-6 py-3 overflow-hidden font-medium text-[#C6A969] transition duration-300 ease-out border-2 border-[#C6A969] rounded-full shadow-md group"
+            className="relative inline-flex items-center justify-center p-4 px-6 py-3 overflow-hidden font-medium text-secondaryLight transition duration-300 ease-out border-2 border-secondaryLight rounded-full shadow-md group"
           >
-            <span className="absolute inset-0 flex items-center justify-center w-full h-full text-[#D6CDA4] duration-300 -translate-x-full bg-[#C6A969] group-hover:translate-x-0 ease">
+            <span className="absolute inset-0 flex items-center justify-center w-full h-full text-primaryLight duration-300 -translate-x-full bg-secondaryLight group-hover:translate-x-0 ease">
               <svg
                 className="w-6 h-6"
                 fill="none"
@@ -128,16 +130,16 @@ const Landing = () => {
                 ></path>
               </svg>
             </span>
-            <span className="absolute flex items-center justify-center w-full h-full text-[#C6A969] transition-all duration-300 transform group-hover:translate-x-full ease">
+            <span className="absolute flex items-center justify-center w-full h-full text-secondaryLight transition-all duration-300 transform group-hover:translate-x-full ease">
               View Loader Demo
             </span>
             <span className="relative invisible">Button Text</span>
           </a>
           <a
             href="#_"
-            className="relative inline-flex items-center justify-center p-4 px-6 py-3 overflow-hidden font-medium text-[#C6A969] transition duration-300 ease-out border-2 border-[#C6A969] rounded-full shadow-md group"
+            className="relative inline-flex items-center justify-center p-4 px-6 py-3 overflow-hidden font-medium text-secondaryLight transition duration-300 ease-out border-2 border-secondaryLight rounded-full shadow-md group"
           >
-            <span className="absolute inset-0 flex items-center justify-center w-full h-full text-[#D6CDA4] duration-300 -translate-x-full bg-[#C6A969] group-hover:translate-x-0 ease">
+            <span className="absolute inset-0 flex items-center justify-center w-full h-full text-primaryLight duration-300 -translate-x-full bg-secondaryLight group-hover:translate-x-0 ease">
               <svg
                 className="w-6 h-6"
                 fill="none"
@@ -153,7 +155,7 @@ const Landing = () => {
                 ></path>
               </svg>
             </span>
-            <span className="absolute flex items-center justify-center w-full h-full text-[#C6A969] transition-all duration-300 transform group-hover:translate-x-full ease">
+            <span className="absolute flex items-center justify-center w-full h-full text-secondaryLight transition-all duration-300 transform group-hover:translate-x-full ease">
               View Shimmer Demo
             </span>
             <span className="relative invisible">Button Text</span>

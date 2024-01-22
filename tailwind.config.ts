@@ -19,6 +19,8 @@ const config = {
     },
     extend: {
       colors: {
+        primaryLight: "#D6CDA4",
+        secondaryLight: "#C6A969",
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
