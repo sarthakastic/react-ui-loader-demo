@@ -8,17 +8,18 @@ import {
 } from "@/components/ui/accordion";
 import { ArrowLeftIcon, MenuIcon } from "lucide-react";
 import { Black_Ops_One } from "next/font/google";
+import Link from "next/link";
 import { useState } from "react";
 
 const blackOpsOne = Black_Ops_One({ weight: "400", subsets: ["latin"] });
 
 export default function Sidebar() {
-  const [showSideBar, setShowSideBar] = useState<boolean>(false);
+  const [showSideBar, setShowSideBar] = useState<boolean>(true);
 
   return (
     <>
       {showSideBar ? (
-        <div className="w-1/2  md:w-1/6 bg-secondaryLight min-h-screen text-amber-50 dark:bg-gray-950 ">
+        <div className="w-1/2  md:w-1/6 fixed bg-secondaryLight min-h-screen text-amber-50 dark:bg-gray-950 ">
           <div className="flex items-center justify-around md:px-2 text-primaryLight px-2">
             <div className={`${blackOpsOne.className} text-xl lg:text-4xl    `}>
               React UI Loader
@@ -34,9 +35,15 @@ export default function Sidebar() {
               <AccordionTrigger>Documentation</AccordionTrigger>
               <AccordionContent>
                 <ul>
-                  <li>Introduction</li>
-                  <li>Installation</li>
-                  <li>Loader</li>
+                  <Link href={"/documentation#introduction"}>Introduction</Link>{" "}
+                  <br />
+                  <Link href={"/documentation#motivation"}>
+                    Motivation
+                  </Link>{" "}
+                  <br />
+                  <Link href={"/documentation#installation"}>Installation</Link>
+                  <br />
+                  <Link href={"/documentation#loader"}>Loader</Link> <br />
                   <li>Loader Props</li>
                   <li>Shimmer</li>
                   <li>Shimmer Props</li>
@@ -76,7 +83,7 @@ export default function Sidebar() {
           </Accordion>
         </div>
       ) : (
-        <div className="absolute top-5 left-5">
+        <div className="fixed  top-5 left-5">
           <MenuIcon
             className="hover:cursor-pointer bg-primaryLight dark:bg-gray-900 text-secondaryLight h-8 w-8 md:h-10 md:w-10  rounded-md "
             onClick={() => setShowSideBar(true)}

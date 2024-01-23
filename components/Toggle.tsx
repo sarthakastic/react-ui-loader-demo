@@ -22,7 +22,7 @@ export function ModeToggle() {
   };
 
   return (
-    <div onClick={() => handleTheme()} className="absolute z-50 top-5 right-5 ">
+    <div onClick={() => handleTheme()} className="fixed z-50 top-5 right-5 ">
       <div>
         {/* <DropdownMenuTrigger asChild> */}
         <Button variant="outline" size="icon">
