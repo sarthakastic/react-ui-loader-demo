@@ -14,7 +14,7 @@ import { useState } from "react";
 const blackOpsOne = Black_Ops_One({ weight: "400", subsets: ["latin"] });
 
 export default function Sidebar() {
-  const [showSideBar, setShowSideBar] = useState<boolean>(true);
+  const [showSideBar, setShowSideBar] = useState<boolean>(false);
 
   return (
     <>

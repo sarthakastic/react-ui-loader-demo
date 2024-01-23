@@ -11,3 +11,11 @@ export default function MyApp() {
         <TextLoader show={true} />
     )
 }`;
+
+export const importDefaultShimmer = `import ProfileShimmer from "react-ui-loader"
+
+export default function MyApp() {
+    return (
+        <ProfileShimmer show={true} />
+    )
+}`;

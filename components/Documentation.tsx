@@ -12,6 +12,7 @@ import {
 } from "@/components/ui/table";
 
 import {
+  importDefaultShimmer,
   importDefaultLoader,
   installNpm,
   installPnpm,
@@ -376,6 +377,245 @@ export default function Document() {
             <TableCell className="text-right">
               Arrange loader icon, loader text and loader image in a row or
               column
+            </TableCell>
+          </TableRow>
+        </TableBody>
+      </Table>
+      <div
+        id="shimmer"
+        className="text-primaryLight font-extrabold text-6xl py-5  "
+      >
+        Shimmer
+      </div>
+      <div className="text-secondaryLight">
+        Shimmer helps you add shimeer while you carry out async processess, it
+        is responsive and easily customisable. We can use it by importing it in
+        our component and passing the required prop show.
+      </div>
+      <br />
+      <CopyBlock
+        text={importDefaultShimmer}
+        language={"typescript"}
+        showLineNumbers={true}
+        theme={tomorrowNightBright}
+        codeBlock
+      />
+      <div
+        id="shimmerprops"
+        className="text-primaryLight font-extrabold text-6xl py-5  "
+      >
+        Shimmer Props
+      </div>
+      <Table className=" text-amber-100  bg-secondaryLight font-bold text-base">
+        <TableHeader>
+          <TableRow>
+            <TableHead className="text-primaryLight font-extrabold ">
+              Prop Name
+            </TableHead>
+            <TableHead className="text-primaryLight font-extrabold ">
+              Datatype
+            </TableHead>
+            <TableHead className="text-primaryLight font-extrabold ">
+              Required
+            </TableHead>
+            <TableHead className="text-right text-primaryLight font-extrabold  ">
+              Default Value
+            </TableHead>
+            <TableHead className="text-right text-primaryLight font-extrabold  ">
+              Description
+            </TableHead>
+          </TableRow>
+        </TableHeader>
+        <TableBody>
+          <TableRow>
+            <TableCell className="font-extrabold">show</TableCell>
+            <TableCell>boolean</TableCell>
+            <TableCell>yes</TableCell>
+            <TableCell className="text-right">true</TableCell>
+            <TableCell className="text-right">
+              Determines whether to hide or show shimmer
+            </TableCell>
+          </TableRow>
+          <TableRow>
+            <TableCell className="font-extrabold">
+              profilePositionCenter
+            </TableCell>
+            <TableCell>boolean</TableCell>
+            <TableCell>no</TableCell>
+            <TableCell className="text-right">false</TableCell>
+            <TableCell className="text-right">
+              Determines if profile picture must be in center or not
+            </TableCell>
+          </TableRow>
+          <TableRow>
+            <TableCell className="font-extrabold">profileShape</TableCell>
+            <TableCell>string</TableCell>
+            <TableCell>no</TableCell>
+            <TableCell className="text-right">circle</TableCell>
+            <TableCell className="text-right">
+              Determines the shape of profile picure
+            </TableCell>
+          </TableRow>
+          <TableRow>
+            <TableCell className="font-extrabold">profileDimension</TableCell>
+            <TableCell>string</TableCell>
+            <TableCell>no</TableCell>
+            <TableCell className="text-right">200px</TableCell>
+            <TableCell className="text-right">
+              Determines the size of profile picure
+            </TableCell>
+          </TableRow>
+          <TableRow>
+            <TableCell className="font-extrabold">coverHeight</TableCell>
+            <TableCell>string</TableCell>
+            <TableCell>no</TableCell>
+            <TableCell className="text-right">25%</TableCell>
+            <TableCell className="text-right">
+              Determines the height of cover picure
+            </TableCell>
+          </TableRow>
+          <TableRow>
+            <TableCell className="font-extrabold">coverWidth</TableCell>
+            <TableCell>string</TableCell>
+            <TableCell>no</TableCell>
+            <TableCell className="text-right">100%</TableCell>
+            <TableCell className="text-right">
+              Determines the width of cover picure
+            </TableCell>
+          </TableRow>
+          <TableRow>
+            <TableCell className="font-extrabold">showCover</TableCell>
+            <TableCell>boolean</TableCell>
+            <TableCell>no</TableCell>
+            <TableCell className="text-right">true</TableCell>
+            <TableCell className="text-right">
+              Determines the whether to hide or display the cover picure
+            </TableCell>
+          </TableRow>
+          <TableRow>
+            <TableCell className="font-extrabold">showProfile</TableCell>
+            <TableCell>boolean</TableCell>
+            <TableCell>no</TableCell>
+            <TableCell className="text-right">true</TableCell>
+            <TableCell className="text-right">
+              Determines the whether to hide or display the profile picure
+            </TableCell>
+          </TableRow>
+          <TableRow>
+            <TableCell className="font-extrabold">showLines</TableCell>
+            <TableCell>boolean</TableCell>
+            <TableCell>no</TableCell>
+            <TableCell className="text-right">true</TableCell>
+            <TableCell className="text-right">
+              Determines the whether to hide or display the lines
+            </TableCell>
+          </TableRow>
+          <TableRow>
+            <TableCell className="font-extrabold">numberOfLines</TableCell>
+            <TableCell>number</TableCell>
+            <TableCell>no</TableCell>
+            <TableCell className="text-right">10</TableCell>
+            <TableCell className="text-right">
+              Determines the total number of lines to display
+            </TableCell>
+          </TableRow>
+          <TableRow>
+            <TableCell className="font-extrabold">numberOfCards</TableCell>
+            <TableCell>number</TableCell>
+            <TableCell>no</TableCell>
+            <TableCell className="text-right">10</TableCell>
+            <TableCell className="text-right">
+              Determines the total number of Cards to display
+            </TableCell>
+          </TableRow>
+          <TableRow>
+            <TableCell className="font-extrabold">showCards</TableCell>
+            <TableCell>boolean</TableCell>
+            <TableCell>no</TableCell>
+            <TableCell className="text-right">true</TableCell>
+            <TableCell className="text-right">
+              Determines the whether to hide or display the cards
+            </TableCell>
+          </TableRow>
+          <TableRow>
+            <TableCell className="font-extrabold">cardHeight</TableCell>
+            <TableCell>string</TableCell>
+            <TableCell>no</TableCell>
+            <TableCell className="text-right">420px</TableCell>
+            <TableCell className="text-right">
+              Determines the height of cards
+            </TableCell>
+          </TableRow>
+          <TableRow>
+            <TableCell className="font-extrabold">cardWidth</TableCell>
+            <TableCell>string</TableCell>
+            <TableCell>no</TableCell>
+            <TableCell className="text-right">420px</TableCell>
+            <TableCell className="text-right">
+              Determines the width of cards
+            </TableCell>
+          </TableRow>
+          <TableRow>
+            <TableCell className="font-extrabold">backgroundColor</TableCell>
+            <TableCell>string</TableCell>
+            <TableCell>no</TableCell>
+            <TableCell className="text-right">white</TableCell>
+            <TableCell className="text-right">
+              Determines the color of background
+            </TableCell>
+          </TableRow>
+          <TableRow>
+            <TableCell className="font-extrabold">color</TableCell>
+            <TableCell>string</TableCell>
+            <TableCell>no</TableCell>
+            <TableCell className="text-right">gray</TableCell>
+            <TableCell className="text-right">
+              Determines the color of components
+            </TableCell>
+          </TableRow>
+          <TableRow>
+            <TableCell className="font-extrabold">shimmerColor</TableCell>
+            <TableCell>string</TableCell>
+            <TableCell>no</TableCell>
+            <TableCell className="text-right">white</TableCell>
+            <TableCell className="text-right">
+              Determines the color of shimmer effect
+            </TableCell>
+          </TableRow>
+          <TableRow>
+            <TableCell className="font-extrabold">lineHeight</TableCell>
+            <TableCell>string</TableCell>
+            <TableCell>no</TableCell>
+            <TableCell className="text-right">10px</TableCell>
+            <TableCell className="text-right">
+              Determines the height of lines in shimmer
+            </TableCell>
+          </TableRow>
+          <TableRow>
+            <TableCell className="font-extrabold">lineWidth</TableCell>
+            <TableCell>string</TableCell>
+            <TableCell>no</TableCell>
+            <TableCell className="text-right">98%</TableCell>
+            <TableCell className="text-right">
+              Determines the width of lines in shimmer
+            </TableCell>
+          </TableRow>
+          <TableRow>
+            <TableCell className="font-extrabold">shimmerHeight</TableCell>
+            <TableCell>string</TableCell>
+            <TableCell>no</TableCell>
+            <TableCell className="text-right">fit-content</TableCell>
+            <TableCell className="text-right">
+              Determines the height of shimmer component
+            </TableCell>
+          </TableRow>
+          <TableRow>
+            <TableCell className="font-extrabold">shimmerWidth</TableCell>
+            <TableCell>string</TableCell>
+            <TableCell>no</TableCell>
+            <TableCell className="text-right">100%</TableCell>
+            <TableCell className="text-right">
+              Determines the width of shimmer component
             </TableCell>
           </TableRow>
         </TableBody>
