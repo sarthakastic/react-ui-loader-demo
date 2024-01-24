@@ -24,7 +24,7 @@ export function ModeToggle() {
   return (
     <div
       onClick={() => handleTheme()}
-      className="fixed z-50 bottom-5 md:top-5 right-5 font-extrabold "
+      className="fixed z-40 top-5 right-5 font-extrabold "
     >
       <div>
         {/* <DropdownMenuTrigger asChild> */}
