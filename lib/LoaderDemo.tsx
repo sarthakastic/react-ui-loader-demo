@@ -141,7 +141,7 @@ const loaderDemo = [
   },
   {
     name: "Default Loader",
-    code: <TextLoader key="10" show={true} textAnimate={true} />,
+    code: <TextLoader key="11" show={true} textAnimate={true} />,
     description: "loader cnkdcnkdk",
     demoCode: `<TextLoader
     show={true}
@@ -154,7 +154,7 @@ const loaderDemo = [
     name: "Default Loader",
     code: (
       <TextLoader
-        key="11"
+        key="12"
         show={true}
         loaderText="Custom Text"
         loader={true}
@@ -173,7 +173,7 @@ const loaderDemo = [
     name: "Default Loader",
     code: (
       <TextLoader
-        key="12"
+        key="13"
         show={true}
         loaderText="Custom Text"
         loader={true}
@@ -192,7 +192,7 @@ const loaderDemo = [
     name: "Default Loader",
     code: (
       <TextLoader
-        key="13"
+        key="14"
         show={true}
         loaderText="Custom Text"
         loader={true}
@@ -212,7 +212,7 @@ const loaderDemo = [
     name: "Default Loader",
     code: (
       <TextLoader
-        key="14"
+        key="15"
         show={true}
         loaderText="Custom Text"
         loader={true}
@@ -232,7 +232,7 @@ const loaderDemo = [
     name: "Logo Loader",
     code: (
       <TextLoader
-        key="15"
+        key="16"
         show={true}
         logo={true}
         textColor="#C5A967"
@@ -253,7 +253,7 @@ const loaderDemo = [
     name: "Logo Loader",
     code: (
       <TextLoader
-        key="16"
+        key="17"
         show={true}
         logo={true}
         textColor="#C5A967"
@@ -273,10 +273,10 @@ const loaderDemo = [
   />`,
   },
   {
-    name: "Logo Loader",
+    name: "Animated Logo Loader",
     code: (
       <TextLoader
-        key="17"
+        key="18"
         show={true}
         logo={true}
         textColor="#C5A967"
@@ -288,19 +288,25 @@ const loaderDemo = [
         <Image src={logo} alt="logo" />
       </TextLoader>
     ),
-    description: "loader cnkdcnkdk",
+    description: "Loader with a Logo animating like a heartbeat",
     demoCode: `<TextLoader
+    key="18"
     show={true}
-    loaderText="Custom Text"
-    heightValue={"100px"}
-    widthValue={"200px"}
-  />`,
+    logo={true}
+    textColor="#C5A967"
+    fontWeightValue={800}
+    logoHeight="200px"
+    logoWidth="200px"
+    logoAnimate={true}
+  >
+    <Image src={logo} alt="logo" />
+  </TextLoader>`,
   },
   {
-    name: "Logo Loader",
+    name: "Horizontally Aligned Loader",
     code: (
       <TextLoader
-        key="17"
+        key="19"
         show={true}
         logo={true}
         textColor="#C5A967"
@@ -315,12 +321,23 @@ const loaderDemo = [
         <Image src={logo} alt="logo" />
       </TextLoader>
     ),
-    description: "loader cnkdcnkdk",
+    description:
+      "Loader with all logo, loaderIcon and Loading Text arranged in a row",
     demoCode: `<TextLoader
+    key="19"
     show={true}
-    loaderText="Custom Text"
-    heightValue={"100px"}
-    widthValue={"200px"}
+    logo={true}
+    textColor="#C5A967"
+    fontWeightValue={800}
+    logoHeight="200px"
+    logoWidth="200px"
+    logoAnimate={true}
+    loader={true}
+    loaderStyle="CircularLoader"
+    row={true}
+  >
+    <Image src={logo} alt="logo" />
+  </TextLoader>
   />`,
   },
 ];

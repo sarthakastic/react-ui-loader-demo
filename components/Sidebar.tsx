@@ -19,7 +19,7 @@ export default function Sidebar() {
   return (
     <>
       {showSideBar ? (
-        <div className="w-1/2 z-40  md:w-1/6 fixed bg-secondaryLight min-h-screen text-amber-50 dark:bg-gray-950 ">
+        <div className="w-1/2 z-30  md:w-1/6 fixed bg-secondaryLight min-h-screen text-amber-50 dark:bg-gray-950 ">
           <div className="flex items-center justify-around md:px-2 text-primaryLight px-2">
             <div className={`${blackOpsOne.className} text-xl lg:text-4xl    `}>
               React UI Loader
