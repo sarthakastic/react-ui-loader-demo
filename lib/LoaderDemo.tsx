@@ -13,7 +13,7 @@ const loaderDemo = [
   {
     name: "Custom Background Color Loader",
     code: <TextLoader key="2" show={true} bgColor="#76453B" />,
-    description: "loader cnkdcnkdk",
+    description: "Loader with custom background color",
     demoCode: `<TextLoader show={true} bgColor="#76453B" />`,
   },
   {
@@ -26,7 +26,7 @@ const loaderDemo = [
         backgroundOpacity={0.5}
       />
     ),
-    description: "loader cnkdcnkdk",
+    description: "Loader with custom opacity of background",
     demoCode: ` <TextLoader
     show={true}
     bgColor="#76453B"
@@ -34,182 +34,134 @@ const loaderDemo = [
   />`,
   },
   {
-    name: "Default Loader",
+    name: "Custom Text Loader",
     code: <TextLoader key="4" show={true} loaderText="Custom Text" />,
-    description: "loader cnkdcnkdk",
+    description: "Loader with custom text",
     demoCode: `<TextLoader show={true} loaderText="Custom Text" />`,
   },
   {
-    name: "Default Loader",
-    code: (
-      <TextLoader
-        key="5"
-        show={true}
-        loaderText="Custom Text"
-        widthValue={"200px"}
-      />
-    ),
-    description: "loader cnkdcnkdk",
-    demoCode: `<TextLoader show={true} loaderText="Custom Text" />`,
+    name: "Custom Width Loader",
+    code: <TextLoader key="5" show={true} widthValue={"200px"} />,
+    description: "Loader with custom width size",
+    demoCode: `<TextLoader show={true} widthValue={"200px"} />`,
   },
   {
-    name: "Default Loader",
-    code: (
-      <TextLoader
-        key="6"
-        show={true}
-        loaderText="Custom Text"
-        heightValue={"100px"}
-      />
-    ),
-    description: "loader cnkdcnkdk",
-    demoCode: `<TextLoader show={true} loaderText="Custom Text" />`,
+    name: "Custom Height Loader",
+    code: <TextLoader key="6" show={true} heightValue={"100px"} />,
+    description: "Loader with custom height size",
+    demoCode: `<TextLoader show={true} heightValue={"100px"} />`,
   },
   {
-    name: "Default Loader",
+    name: "Custom Loader Size",
     code: (
       <TextLoader
         key="7"
         show={true}
-        loaderText="Custom Text"
         heightValue={"100px"}
         widthValue={"200px"}
       />
     ),
-    description: "loader cnkdcnkdk",
+    description: "Loader with custom height and width size",
     demoCode: `<TextLoader
     show={true}
-    loaderText="Custom Text"
     heightValue={"100px"}
     widthValue={"200px"}
   />`,
   },
   {
-    name: "Default Loader",
-    code: (
-      <TextLoader
-        key="8"
-        show={true}
-        loaderText="Custom Text"
-        textColor="red"
-      />
-    ),
-    description: "loader cnkdcnkdk",
+    name: "Custom Text Color Loader",
+    code: <TextLoader key="8" show={true} textColor="red" />,
+    description: "Loader with custom text color",
     demoCode: `<TextLoader
     show={true}
-    loaderText="Custom Text"
-    heightValue={"100px"}
-    widthValue={"200px"}
+    textColor="red"
   />`,
   },
   {
-    name: "Default Loader",
-    code: (
-      <TextLoader
-        key="9"
-        show={true}
-        loaderText="Custom Text"
-        fontSizeValue="64px"
-      />
-    ),
-    description: "loader cnkdcnkdk",
+    name: "Custom Text Size Loader",
+    code: <TextLoader key="9" show={true} fontSizeValue="64px" />,
+    description: "Loader with custom text size",
     demoCode: `<TextLoader
     show={true}
-    loaderText="Custom Text"
-    heightValue={"100px"}
-    widthValue={"200px"}
+    fontSizeValue="64px" 
   />`,
   },
   {
-    name: "Default Loader",
+    name: "Custom Text Weight Loader",
     code: (
       <TextLoader
         key="10"
         show={true}
-        loaderText="Custom Text"
         fontSizeValue="64px"
         fontWeightValue={800}
       />
     ),
-    description: "loader cnkdcnkdk",
+    description: "Loader with custom font weight",
     demoCode: `<TextLoader
     show={true}
-    loaderText="Custom Text"
-    heightValue={"100px"}
-    widthValue={"200px"}
+    fontSizeValue="64px"
+    fontWeightValue={800}
   />`,
   },
   {
-    name: "Default Loader",
+    name: "Animated Text Loader",
     code: <TextLoader key="11" show={true} textAnimate={true} />,
-    description: "loader cnkdcnkdk",
+    description: "Loader with an animated text",
     demoCode: `<TextLoader
     show={true}
-    loaderText="Custom Text"
-    heightValue={"100px"}
-    widthValue={"200px"}
+    textAnimate={true}
   />`,
   },
   {
-    name: "Default Loader",
+    name: "Custom Loader Icon Circle",
     code: (
       <TextLoader
         key="12"
         show={true}
-        loaderText="Custom Text"
         loader={true}
         loaderStyle="CircularLoader"
       />
     ),
-    description: "loader cnkdcnkdk",
+    description: "Custom Loader with a revolving circle icon",
     demoCode: `<TextLoader
     show={true}
-    loaderText="Custom Text"
-    heightValue={"100px"}
-    widthValue={"200px"}
+    loader={true}
+    loaderStyle="CircularLoader"
   />`,
   },
   {
-    name: "Default Loader",
+    name: "Custom Loader Icon Dots",
     code: (
-      <TextLoader
-        key="13"
-        show={true}
-        loaderText="Custom Text"
-        loader={true}
-        loaderStyle="DotLoader"
-      />
+      <TextLoader key="13" show={true} loader={true} loaderStyle="DotLoader" />
     ),
-    description: "loader cnkdcnkdk",
+    description: "Custom Loader with a changing dot size",
     demoCode: `<TextLoader
-    show={true}
-    loaderText="Custom Text"
-    heightValue={"100px"}
-    widthValue={"200px"}
+    show={true} 
+    loader={true} 
+    loaderStyle="DotLoader" 
   />`,
   },
   {
-    name: "Default Loader",
+    name: "Custom loader Size Loader",
     code: (
       <TextLoader
         key="14"
         show={true}
-        loaderText="Custom Text"
         loader={true}
         loaderStyle="CircularLoader"
         loaderSize="small"
       />
     ),
-    description: "loader cnkdcnkdk",
+    description: "Loader with custom size of loader icon",
     demoCode: `<TextLoader
     show={true}
-    loaderText="Custom Text"
-    heightValue={"100px"}
-    widthValue={"200px"}
+    loader={true}
+    loaderStyle="CircularLoader"
+    loaderSize="small"
   />`,
   },
   {
-    name: "Default Loader",
+    name: "Custom Loader Icon Color",
     code: (
       <TextLoader
         key="15"
@@ -220,12 +172,13 @@ const loaderDemo = [
         loaderColor="blue"
       />
     ),
-    description: "loader cnkdcnkdk",
+    description: "Loader Icon with a custom color",
     demoCode: `<TextLoader
     show={true}
     loaderText="Custom Text"
-    heightValue={"100px"}
-    widthValue={"200px"}
+    loader={true}
+    loaderStyle="DotLoader"
+    loaderColor="blue"
   />`,
   },
   {
@@ -241,16 +194,19 @@ const loaderDemo = [
         <Image src={logo} alt="logo" />
       </TextLoader>
     ),
-    description: "loader cnkdcnkdk",
-    demoCode: `<TextLoader
+    description: "Loader with a custom image as logo",
+    demoCode: ` <TextLoader
+    key="16"
     show={true}
-    loaderText="Custom Text"
-    heightValue={"100px"}
-    widthValue={"200px"}
-  />`,
+    logo={true}
+    textColor="#C5A967"
+    fontWeightValue={800}
+  >
+    <Image src={logo} alt="logo" />
+  </TextLoader>`,
   },
   {
-    name: "Logo Loader",
+    name: "Custom Size Logo Loader",
     code: (
       <TextLoader
         key="17"
@@ -264,12 +220,14 @@ const loaderDemo = [
         <Image src={logo} alt="logo" />
       </TextLoader>
     ),
-    description: "loader cnkdcnkdk",
+    description: "Loader with a custom size for image as logo",
     demoCode: `<TextLoader
     show={true}
-    loaderText="Custom Text"
-    heightValue={"100px"}
-    widthValue={"200px"}
+    logo={true}
+    textColor="#C5A967"
+    fontWeightValue={800}
+    logoHeight="200px"
+    logoWidth="200px"
   />`,
   },
   {
@@ -322,7 +280,7 @@ const loaderDemo = [
       </TextLoader>
     ),
     description:
-      "Loader with all logo, loaderIcon and Loading Text arranged in a row",
+      "Loader with Logo, Loader Icon and Loading Text arranged in a row",
     demoCode: `<TextLoader
     key="19"
     show={true}
