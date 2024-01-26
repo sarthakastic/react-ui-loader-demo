@@ -29,6 +29,7 @@ const loaderDemo = [
       "Default Loader with plain text as 'loading...' on fullscreen black background  ",
     demoCode: `<TextLoader show={true} />`,
     image: <Image src={defaultLoader} alt="default loader" />,
+    id: "defaultLoader",
   },
   {
     name: "Custom Background Color Loader",
@@ -41,6 +42,7 @@ const loaderDemo = [
         alt="custom background color loader"
       />
     ),
+    id: "customBackgroundColorLoader",
   },
   {
     name: "Custom Background Opacity Loader",
@@ -64,6 +66,7 @@ const loaderDemo = [
         alt="custom background opacity loader"
       />
     ),
+    id: "customBackgroundOpacityLoader",
   },
   {
     name: "Custom Text Loader",
@@ -71,6 +74,7 @@ const loaderDemo = [
     description: "Loader with custom text",
     demoCode: `<TextLoader show={true} loaderText="Custom Text" />`,
     image: <Image src={customTextLoader} alt="custom text loader" />,
+    id: "customTextLoader",
   },
   {
     name: "Custom Width Loader",
@@ -78,6 +82,7 @@ const loaderDemo = [
     description: "Loader with custom width size",
     demoCode: `<TextLoader show={true} widthValue={"200px"} />`,
     image: <Image src={customWidthLoader} alt="custom width loader" />,
+    id: "customWidthLoader",
   },
   {
     name: "Custom Height Loader",
@@ -85,6 +90,7 @@ const loaderDemo = [
     description: "Loader with custom height size",
     demoCode: `<TextLoader show={true} heightValue={"100px"} />`,
     image: <Image src={customHeightLoader} alt="custom height loader" />,
+    id: "customHeightLoader",
   },
   {
     name: "Custom Loader Size",
@@ -103,6 +109,7 @@ const loaderDemo = [
       widthValue={"200px"}
       />`,
     image: <Image src={customLoaderSize} alt="custom loader size" />,
+    id: "customLoaderSize",
   },
   {
     name: "Custom Text Color Loader",
@@ -113,6 +120,7 @@ const loaderDemo = [
     textColor="red"
     />`,
     image: <Image src={customTextColorLoader} alt="default shimmer" />,
+    id: "customTextColorLoader",
   },
   {
     name: "Custom Text Size Loader",
@@ -123,6 +131,7 @@ const loaderDemo = [
     fontSizeValue="64px" 
     />`,
     image: <Image src={customTextSizeLoader} alt="custom text color loader" />,
+    id: "customTextSizeLoader",
   },
   {
     name: "Custom Text Weight Loader",
@@ -143,6 +152,7 @@ const loaderDemo = [
     image: (
       <Image src={customTextWeightLoader} alt="custom text weight loader" />
     ),
+    id: "customTextWeightLoader",
   },
   {
     name: "Animated Text Loader",
@@ -153,6 +163,7 @@ const loaderDemo = [
     textAnimate={true}
     />`,
     image: <Image src={animatedTextLoader} alt="animated text loader" />,
+    id: "animatedTextLoader",
   },
   {
     name: "Custom Loader Icon Circle",
@@ -173,6 +184,7 @@ const loaderDemo = [
     image: (
       <Image src={customLoaderIconCircle} alt="custom loader icon circle" />
     ),
+    id: "customLoaderIconCircle",
   },
   {
     name: "Custom Loader Icon Dots",
@@ -186,6 +198,7 @@ const loaderDemo = [
       loaderStyle="DotLoader" 
       />`,
     image: <Image src={customLoaderIconDots} alt="custom loader icon dots" />,
+    id: "customLoaderIconDots",
   },
   {
     name: "Custom loader Size Loader",
@@ -208,6 +221,7 @@ const loaderDemo = [
     image: (
       <Image src={customLoaderIconSizeLoader} alt="custom loader size loader" />
     ),
+    id: "customLoaderIconSizeLoader",
   },
   {
     name: "Custom Loader Icon Color",
@@ -230,6 +244,7 @@ const loaderDemo = [
       loaderColor="blue"
       />`,
     image: <Image src={customLoaderIconColor} alt="custom loader icon color" />,
+    id: "customLoaderIconColor",
   },
   {
     name: "Logo Loader",
@@ -255,6 +270,7 @@ const loaderDemo = [
     <Image src={logo} alt="logo" />
     </TextLoader>`,
     image: <Image src={logoLoader} alt="logo loader" />,
+    id: "logoLoader",
   },
   {
     name: "Custom Size Logo Loader",
@@ -281,6 +297,7 @@ const loaderDemo = [
     logoWidth="200px"
     />`,
     image: <Image src={customSizeLogoLoader} alt="custom size logo loader" />,
+    id: "customSizeLogoLoader",
   },
   {
     name: "Animated Logo Loader",
@@ -312,6 +329,7 @@ const loaderDemo = [
     <Image src={logo} alt="logo" />
     </TextLoader>`,
     image: <Image src={animatedLogoLoader} alt="animated logo loader" />,
+    id: "animatedLogoLoader",
   },
   {
     name: "Horizontally Aligned Loader",
@@ -356,6 +374,7 @@ const loaderDemo = [
         alt="horizontally aligned loader"
       />
     ),
+    id: "horizontallyAlignedLoader",
   },
 ];
 

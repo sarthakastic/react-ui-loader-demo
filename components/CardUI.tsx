@@ -22,7 +22,10 @@ import {
 
 const CardUI = ({ e, setShow }: any) => {
   return (
-    <Card className=" bg-[#ECE3CE] dark:bg-[#001524] shadow-2xl min-h-[420px] m-auto mt-20 w-5/6 md:w-1/3  xl:w-1/5">
+    <Card
+      id={e.id}
+      className=" bg-[#ECE3CE] dark:bg-[#001524] shadow-2xl min-h-[420px] m-auto mt-20 w-5/6 md:w-1/3  xl:w-1/5"
+    >
       <CardHeader className="m-2 p-1 h-fit shadow-[inset_0_-2px_4px_rgba(0,0,0,0.6)]">
         {e.image}
       </CardHeader>

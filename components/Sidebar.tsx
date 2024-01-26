@@ -10,6 +10,8 @@ import { ArrowLeftIcon, MenuIcon } from "lucide-react";
 import { Black_Ops_One } from "next/font/google";
 import Link from "next/link";
 import { useState } from "react";
+import loaderDemo from "@/lib/LoaderDemo";
+import shimmerDemo from "@/lib/ShimmerDemo";
 
 const blackOpsOne = Black_Ops_One({ weight: "400", subsets: ["latin"] });
 
@@ -54,37 +56,29 @@ export default function Sidebar() {
             </AccordionItem>
           </Accordion>
           <Accordion type="single" collapsible className="p-5">
-            <AccordionItem value="item-1">
+            <AccordionItem value="item-2">
               <AccordionTrigger>
+                {" "}
                 <Link href={"/loaderDemo"}>Loader Demo</Link>{" "}
               </AccordionTrigger>
-              <AccordionContent>
-                <ul>
-                  <li>Introduction</li>
-                  <li>Installation</li>
-                  <li>Loader</li>
-                  <li>Loader Props</li>
-                  <li>Shimmer</li>
-                  <li>Shimmer Props</li>
-                </ul>
-              </AccordionContent>
+              {loaderDemo.map((item, key) => (
+                <AccordionContent key={key}>
+                  <Link href={`loaderDemo#${item.id}`}>{item.name}</Link>
+                </AccordionContent>
+              ))}
             </AccordionItem>
           </Accordion>
           <Accordion type="single" collapsible className="p-5">
-            <AccordionItem value="item-1">
+            <AccordionItem value="item-2">
               <AccordionTrigger>
+                {" "}
                 <Link href={"/shimmerDemo"}>Shimmer Demo</Link>{" "}
               </AccordionTrigger>
-              <AccordionContent>
-                <ul>
-                  <li>Introduction</li>
-                  <li>Installation</li>
-                  <li>Loader</li>
-                  <li>Loader Props</li>
-                  <li>Shimmer</li>
-                  <li>Shimmer Props</li>
-                </ul>
-              </AccordionContent>
+              {shimmerDemo.map((item, key) => (
+                <AccordionContent key={key}>
+                  <Link href={`shimmerDemo#${item.id}`}>{item.name}</Link>
+                </AccordionContent>
+              ))}
             </AccordionItem>
           </Accordion>
         </div>

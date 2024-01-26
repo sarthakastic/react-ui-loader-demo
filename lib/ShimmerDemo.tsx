@@ -28,6 +28,7 @@ const shimmerDemo = [
       "Default Shimmer with white background and gray shimmer effect containing cover photo, profile picture, line and cards",
     demoCode: `<ProfileShimmer show={true} />`,
     image: <Image src={defaultShimmer} alt="default shimmer" />,
+    id: "defaultShimmer",
   },
   {
     name: "Profile Picture Center Shimmer",
@@ -40,6 +41,7 @@ const shimmerDemo = [
         alt="profile picture center shimmer"
       />
     ),
+    id: "profilePictureCenterShimmer",
   },
   {
     name: "Profile Picture Size Shimmer",
@@ -53,6 +55,7 @@ const shimmerDemo = [
         alt="profile picture size shimmer"
       />
     ),
+    id: "profilePictureSizeShimmer",
   },
   {
     name: "Rounded Corner Profile Shimmer",
@@ -65,6 +68,7 @@ const shimmerDemo = [
         alt="rounded corner profile shimmer"
       />
     ),
+    id: "roundedCornerProfileShimmer",
   },
   {
     name: "Square Profile Shimmer",
@@ -72,6 +76,7 @@ const shimmerDemo = [
     description: "Shimmer with Square shaped profile picture",
     demoCode: `<ProfileShimmer show={true}  profileShape="square" />`,
     image: <Image src={squareProfileShimmer} alt="square profile shimmer" />,
+    id: "squareProfileShimmer",
   },
   {
     name: "No profile Picture Shimmer",
@@ -81,6 +86,7 @@ const shimmerDemo = [
     image: (
       <Image src={noProfilePictureShimmer} alt="no profile picture shimmer" />
     ),
+    id: "noProfilePictureShimmer",
   },
   {
     name: "Custom Cover Height Shimmer",
@@ -90,6 +96,7 @@ const shimmerDemo = [
     image: (
       <Image src={customCoverHeightShimmer} alt="custom cover height shimmer" />
     ),
+    id: "customCoverHeightShimmer",
   },
   {
     name: "Custom Cover Width Shimmer",
@@ -99,6 +106,7 @@ const shimmerDemo = [
     image: (
       <Image src={customCoverWidthShimmer} alt="custom cover width shimmer" />
     ),
+    id: "customCoverWidthShimmer",
   },
   {
     name: "No Cover Shimmer",
@@ -106,6 +114,7 @@ const shimmerDemo = [
     description: "Shimmer with no cover",
     demoCode: `<ProfileShimmer show={true} showCover={false} />`,
     image: <Image src={noCoverShimmer} alt="no cover shimmer" />,
+    id: "noCoverShimmer",
   },
   {
     name: "No Line Shimmer",
@@ -113,6 +122,7 @@ const shimmerDemo = [
     description: "Shimmer with no lines",
     demoCode: `<ProfileShimmer show={true} showLines={false} />`,
     image: <Image src={noLineShimmer} alt="no line shimmer" />,
+    id: "noLineShimmer",
   },
   {
     name: "Custom Line Height Shimmer",
@@ -122,6 +132,7 @@ const shimmerDemo = [
     image: (
       <Image src={customLineHeightShimmer} alt="custom line height shimmer" />
     ),
+    id: "customLineHeightShimmer",
   },
   {
     name: "Custom Line width Shimmer",
@@ -131,6 +142,7 @@ const shimmerDemo = [
     image: (
       <Image src={customLineWidthShimmer} alt="custom line width shimmer" />
     ),
+    id: "customLineWidthShimmer",
   },
   {
     name: "Custom Lines Quantity Shimmer",
@@ -143,6 +155,7 @@ const shimmerDemo = [
         alt="custom line quantity shimmer"
       />
     ),
+    id: "customLineQuantityShimmer",
   },
   {
     name: "No Cards Shimmer",
@@ -150,6 +163,7 @@ const shimmerDemo = [
     description: "Shimmer with no cards",
     demoCode: `<ProfileShimmer show={true} showCards={false} />`,
     image: <Image src={noCardsShimmer} alt="no cards shimmer" />,
+    id: "noCardsShimmer",
   },
   {
     name: "Custom Cards Quantity Shimmer",
@@ -162,6 +176,7 @@ const shimmerDemo = [
         alt="custom card quantity shimmer"
       />
     ),
+    id: "customCardsQuantityShimmer",
   },
   {
     name: "Custom Card Height Shimmer",
@@ -171,6 +186,7 @@ const shimmerDemo = [
     image: (
       <Image src={customCardHeightShimmer} alt="custom card height shimmer" />
     ),
+    id: "customCardHeightShimmer",
   },
   {
     name: "Custom Card Width Shimmer",
@@ -180,6 +196,7 @@ const shimmerDemo = [
     image: (
       <Image src={customCardWidthShimmer} alt="custom card width shimmer" />
     ),
+    id: "customCardWidthShimmer",
   },
   {
     name: "Custom Background Shimmer",
@@ -189,6 +206,7 @@ const shimmerDemo = [
     image: (
       <Image src={customBackgroundShimmer} alt="custom background shimmer" />
     ),
+    id: "customBackgroundShimmer",
   },
   {
     name: "Custom Color Shimmer",
@@ -209,6 +227,7 @@ const shimmerDemo = [
     backgroundColor="#D6CDA4"
   />`,
     image: <Image src={customColorShimmer} alt="custom color shimmer" />,
+    id: "customColorShimmer",
   },
 ];
 
