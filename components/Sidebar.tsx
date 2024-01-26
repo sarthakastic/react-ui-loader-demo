@@ -22,7 +22,7 @@ export default function Sidebar() {
         <div className="w-1/2 z-30  md:w-1/6 fixed bg-secondaryLight min-h-screen text-amber-50 dark:bg-gray-950 ">
           <div className="flex items-center justify-around md:px-2 text-primaryLight px-2">
             <div className={`${blackOpsOne.className} text-xl lg:text-4xl    `}>
-              React UI Loader
+              <Link href={"/"}>React UI Loader</Link>
             </div>
 
             <ArrowLeftIcon
@@ -32,28 +32,32 @@ export default function Sidebar() {
           </div>
           <Accordion type="single" collapsible className="p-5">
             <AccordionItem value="item-1">
-              <AccordionTrigger>Documentation</AccordionTrigger>
+              <AccordionTrigger>
+                {" "}
+                <Link href={"/documentation"}>Documentation</Link>{" "}
+              </AccordionTrigger>
               <AccordionContent>
-                <ul>
-                  <Link href={"/documentation#introduction"}>Introduction</Link>{" "}
-                  <br />
-                  <Link href={"/documentation#motivation"}>
-                    Motivation
-                  </Link>{" "}
-                  <br />
-                  <Link href={"/documentation#installation"}>Installation</Link>
-                  <br />
-                  <Link href={"/documentation#loader"}>Loader</Link> <br />
-                  <li>Loader Props</li>
-                  <li>Shimmer</li>
-                  <li>Shimmer Props</li>
-                </ul>
+                <Link href={"/documentation#introduction"}>Introduction</Link>{" "}
+                <br />
+                <Link href={"/documentation#motivation"}>Motivation</Link>{" "}
+                <br />
+                <Link href={"/documentation#installation"}>Installation</Link>
+                <br />
+                <Link href={"/documentation#loader"}>Loader</Link> <br />
+                <Link href={"/documentation#loaderprops"}>
+                  Loader Props
+                </Link>{" "}
+                <br />
+                <Link href={"/documentation#shimmer"}>Shimmer</Link> <br />
+                <Link href={"/documentation#shimmerprops"}>Shimmer Props</Link>
               </AccordionContent>
             </AccordionItem>
           </Accordion>
           <Accordion type="single" collapsible className="p-5">
             <AccordionItem value="item-1">
-              <AccordionTrigger>Loader Demo</AccordionTrigger>
+              <AccordionTrigger>
+                <Link href={"/loaderDemo"}>Loader Demo</Link>{" "}
+              </AccordionTrigger>
               <AccordionContent>
                 <ul>
                   <li>Introduction</li>
@@ -68,7 +72,9 @@ export default function Sidebar() {
           </Accordion>
           <Accordion type="single" collapsible className="p-5">
             <AccordionItem value="item-1">
-              <AccordionTrigger>Shimmer Demo</AccordionTrigger>
+              <AccordionTrigger>
+                <Link href={"/shimmerDemo"}>Shimmer Demo</Link>{" "}
+              </AccordionTrigger>
               <AccordionContent>
                 <ul>
                   <li>Introduction</li>

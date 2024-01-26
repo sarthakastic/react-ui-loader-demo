@@ -136,7 +136,7 @@ const Landing = () => {
             <span className="relative invisible">Button Text</span>
           </Link>
           <a
-            href="#_"
+            href="/shimmerDemo"
             className="relative inline-flex items-center justify-center p-4 px-6 py-3 overflow-hidden font-medium text-secondaryLight transition duration-300 ease-out border-2 border-secondaryLight rounded-full shadow-md group"
           >
             <span className="absolute inset-0 flex items-center justify-center w-full h-full text-primaryLight duration-300 -translate-x-full bg-secondaryLight group-hover:translate-x-0 ease">

@@ -139,7 +139,7 @@ export default function Document() {
         codeBlock
       />
       <div
-        id="loader"
+        id="loaderprops"
         className="text-primaryLight font-extrabold text-6xl py-5  "
       >
         Loader Props
