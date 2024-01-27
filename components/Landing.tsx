@@ -42,7 +42,7 @@ const Landing = () => {
       <div
         ref={loader}
         className=" flex h-1/4 md:h-screen z-10 w-screen md:w-2/5 absolute shadow-[0px_22px_70px_4px_rgba(0,0,0,0.56)] md:shadow-none left-0 md:bottom-0 bg-gradient-to-b md:bg-gradient-to-r from-black to-transparent"
-        style={{ transform: hoverLoader.transform }}
+        style={{ transform: `${widthSize > 720 && hoverLoader.transform}` }}
       >
         <TextLoader
           show={true}
@@ -57,7 +57,7 @@ const Landing = () => {
       <div
         ref={shimmer}
         className=" h-2/5 md:h-screen z-10 w-screen md:w-2/5 absolute shadow-[0px_22px_70px_4px_rgba(0,0,0,0.56)] md:shadow-none   right-0  -bottom-20 md:bottom-0 flex justify-end bg-gradient-to-t md:bg-gradient-to-l from-black to-transparent"
-        style={{ transform: hoverShimmer.transform }}
+        style={{ transform: `${widthSize > 720 && hoverShimmer.transform}` }}
       >
         <ProfileShimmer
           show={true}
