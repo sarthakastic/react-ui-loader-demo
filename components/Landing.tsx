@@ -11,9 +11,13 @@ const blackOpsOne = Black_Ops_One({ weight: "400", subsets: ["latin"] });
 const silkscreen = Silkscreen({ weight: "400", subsets: ["latin"] });
 
 const Landing = () => {
-  const widthSize = window.innerWidth;
-
+  //   const widthSize = window.innerWidth;
   const [screenWidth, setScreenWidth] = useState<string>("100%");
+  const [widthSize, setWidthSize] = useState<number>(1000);
+
+  useEffect(() => {
+    setWidthSize(window.innerWidth);
+  }, []);
 
   const shimmer = useRef<HTMLDivElement>(null);
   const loader = useRef<HTMLDivElement>(null);
