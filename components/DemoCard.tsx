@@ -43,6 +43,7 @@ export const DemoCard = ({ e }: any) => {
         {show && (
           <div className=" w-screen z-50 top-5 left-10 fixed  ">
             <Button
+              className="text-primaryLight font-extrabold bg-secondaryLight hover:text-secondaryLight hover:bg-primaryLight hover:font-extrabold "
               onClick={() => {
                 setShow(false);
               }}

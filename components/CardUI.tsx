@@ -24,17 +24,20 @@ const CardUI = ({ e, setShow }: any) => {
   return (
     <Card
       id={e.id}
-      className=" bg-[#ECE3CE] dark:bg-[#001524] shadow-2xl min-h-[420px] m-auto mt-20 w-5/6 md:w-1/3  xl:w-1/5"
+      className=" bg-[#ECE3CE] dark:bg-[#001524] flex flex-col justify-between shadow-2xl min-h-[420px] m-auto mt-20 w-5/6 md:w-1/3  xl:w-1/5"
     >
       <CardHeader className="m-2 p-1 h-fit shadow-[inset_0_-2px_4px_rgba(0,0,0,0.6)]">
         {e.image}
       </CardHeader>
       <CardContent>
-        <CardTitle>{e.name}</CardTitle>
-        <p>{e.description}</p>
+        <CardTitle className="text-secondaryLight">{e.name}</CardTitle>
+        <p className="text-secondaryLight dark:text-primaryLight pt-2">
+          {e.description}
+        </p>
       </CardContent>
       <CardFooter className="w-full  flex justify-around ">
         <Button
+          className="bg-primaryLight hover:bg-secondaryLight text-black "
           onClick={() => {
             setShow(true);
           }}
@@ -42,11 +45,11 @@ const CardUI = ({ e, setShow }: any) => {
           View Demo
         </Button>
         <Dialog>
-          <DialogTrigger className="rounded-md bg-white text-black p-2 ">
+          <DialogTrigger className="rounded-md  text-black p-2 bg-primaryLight hover:bg-secondaryLight">
             View Code
           </DialogTrigger>
 
-          <DialogContent>
+          <DialogContent className="bg-secondaryLight dark:bg-transparent ">
             <DialogHeader>
               <DialogDescription>
                 <CopyBlock
