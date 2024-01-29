@@ -21,7 +21,7 @@ export default function Sidebar() {
   return (
     <>
       {showSideBar ? (
-        <div className="w-1/2 z-30  md:w-1/6 fixed bg-secondaryLight h-screen text-amber-50 dark:bg-gray-950 overflow-y-auto">
+        <div className="w-1/2 z-30  md:w-1/6 fixed bg-secondaryLight h-screen text-primaryLight dark:bg-gray-950 overflow-y-auto">
           <div className="flex items-center justify-around md:px-2 text-primaryLight px-2">
             <div className={`${blackOpsOne.className} text-xl lg:text-4xl    `}>
               <Link href={"/"}>React UI Loader</Link>
@@ -32,51 +32,111 @@ export default function Sidebar() {
               onClick={() => setShowSideBar(false)}
             />
           </div>
-          <Accordion type="single" collapsible className="p-5">
-            <AccordionItem value="item-1">
-              <AccordionTrigger>
+          <Accordion type="single" collapsible className="p-5  ">
+            <AccordionItem value="item-1 ">
+              <AccordionTrigger className="hover:no-underline  ">
                 {" "}
-                <Link href={"/documentation"}>Documentation</Link>{" "}
+                <Link
+                  className=" dark:hover:text-secondaryLight hover:text-amber-50 "
+                  href={"/documentation"}
+                >
+                  Documentation
+                </Link>{" "}
               </AccordionTrigger>
               <AccordionContent>
-                <Link href={"/documentation#introduction"}>Introduction</Link>{" "}
+                <Link
+                  className=" dark:hover:text-secondaryLight hover:text-amber-50 "
+                  href={"/documentation#introduction"}
+                >
+                  Introduction
+                </Link>{" "}
                 <br />
-                <Link href={"/documentation#motivation"}>Motivation</Link>{" "}
+                <Link
+                  className=" dark:hover:text-secondaryLight hover:text-amber-50 "
+                  href={"/documentation#motivation"}
+                >
+                  Motivation
+                </Link>{" "}
                 <br />
-                <Link href={"/documentation#installation"}>Installation</Link>
+                <Link
+                  className=" dark:hover:text-secondaryLight hover:text-amber-50 "
+                  href={"/documentation#installation"}
+                >
+                  Installation
+                </Link>
                 <br />
-                <Link href={"/documentation#loader"}>Loader</Link> <br />
-                <Link href={"/documentation#loaderprops"}>
+                <Link
+                  className=" dark:hover:text-secondaryLight hover:text-amber-50 "
+                  href={"/documentation#loader"}
+                >
+                  Loader
+                </Link>{" "}
+                <br />
+                <Link
+                  className=" dark:hover:text-secondaryLight hover:text-amber-50 "
+                  href={"/documentation#loaderprops"}
+                >
                   Loader Props
                 </Link>{" "}
                 <br />
-                <Link href={"/documentation#shimmer"}>Shimmer</Link> <br />
-                <Link href={"/documentation#shimmerprops"}>Shimmer Props</Link>
+                <Link
+                  className=" dark:hover:text-secondaryLight hover:text-amber-50 "
+                  href={"/documentation#shimmer"}
+                >
+                  Shimmer
+                </Link>{" "}
+                <br />
+                <Link
+                  className=" dark:hover:text-secondaryLight hover:text-amber-50 "
+                  href={"/documentation#shimmerprops"}
+                >
+                  Shimmer Props
+                </Link>
               </AccordionContent>
             </AccordionItem>
           </Accordion>
           <Accordion type="single" collapsible className="p-5">
             <AccordionItem value="item-2">
-              <AccordionTrigger>
+              <AccordionTrigger className="hover:no-underline  ">
                 {" "}
-                <Link href={"/loaderDemo"}>Loader Demo</Link>{" "}
+                <Link
+                  className=" dark:hover:text-secondaryLight hover:text-amber-50 "
+                  href={"/loaderDemo"}
+                >
+                  Loader Demo
+                </Link>{" "}
               </AccordionTrigger>
               {loaderDemo.map((item, key) => (
                 <AccordionContent key={key}>
-                  <Link href={`loaderDemo#${item.id}`}>{item.name}</Link>
+                  <Link
+                    className=" dark:hover:text-secondaryLight hover:text-amber-50 "
+                    href={`loaderDemo#${item.id}`}
+                  >
+                    {item.name}
+                  </Link>
                 </AccordionContent>
               ))}
             </AccordionItem>
           </Accordion>
           <Accordion type="single" collapsible className="p-5">
             <AccordionItem value="item-2">
-              <AccordionTrigger>
+              <AccordionTrigger className="hover:no-underline  ">
                 {" "}
-                <Link href={"/shimmerDemo"}>Shimmer Demo</Link>{" "}
+                <Link
+                  className=" dark:hover:text-secondaryLight hover:text-amber-50 "
+                  href={"/shimmerDemo"}
+                >
+                  Shimmer Demo
+                </Link>{" "}
               </AccordionTrigger>
               {shimmerDemo.map((item, key) => (
                 <AccordionContent key={key}>
-                  <Link href={`shimmerDemo#${item.id}`}>{item.name}</Link>
+                  <Link
+                    className=" dark:hover:text-secondaryLight hover:text-amber-50 "
+                    href={`shimmerDemo#${item.id}`}
+                  >
+                    {item.name}
+                  </Link>
                 </AccordionContent>
               ))}
             </AccordionItem>

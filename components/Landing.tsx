@@ -23,8 +23,8 @@ const Landing = () => {
   const loader = useRef<HTMLDivElement>(null);
 
   const hoverShimmer = useHover3d(shimmer, {
-    x: 20,
-    y: 20,
+    x: 5,
+    y: 50,
     z: -20,
   });
   const hoverLoader = useHover3d(loader, {
@@ -50,25 +50,27 @@ const Landing = () => {
           heightValue={"100%"}
           loader={true}
           loaderStyle="DotLoader"
-          bgColor="#222831"
+          bgColor="#747264"
+          loaderText="React UI Loader"
+          textAnimate={true}
         />
       </div>
 
       <div
         ref={shimmer}
-        className=" h-2/5 md:h-screen z-10 w-screen md:w-2/5 absolute shadow-[0px_22px_70px_4px_rgba(0,0,0,0.56)] md:shadow-none   right-0  -bottom-20 md:bottom-0 flex justify-end bg-gradient-to-t md:bg-gradient-to-l from-black to-transparent"
+        className=" h-2/5 min-h-fit md:h-screen z-10 w-screen md:w-2/5 absolute shadow-[0px_22px_70px_4px_rgba(0,0,0,0.56)] md:shadow-none   right-0  -bottom-20 md:bottom-0 flex justify-end bg-gradient-to-t md:bg-gradient-to-l from-black to-transparent"
         style={{ transform: `${widthSize > 720 && hoverShimmer.transform}` }}
       >
         <ProfileShimmer
           show={true}
           numberOfCards={2}
           numberOfLines={4}
-          cardHeight="180px"
-          coverHeight="150px"
+          cardHeight="15vh"
+          coverHeight="10%"
           profileDimension="100px"
           lineHeight="10px"
           shimmerWidth={screenWidth}
-          shimmerHeight={widthSize > 720 ? "100%" : "fit-content"}
+          shimmerHeight={widthSize > 720 ? "100%" : "100%"}
           showCards={widthSize > 720 ? true : false}
         />
       </div>

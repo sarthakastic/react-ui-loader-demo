@@ -49,7 +49,7 @@ const CardUI = ({ e, setShow }: any) => {
             View Code
           </DialogTrigger>
 
-          <DialogContent className="bg-secondaryLight dark:bg-transparent ">
+          <DialogContent className="bg-secondaryLight">
             <DialogHeader>
               <DialogDescription>
                 <CopyBlock
