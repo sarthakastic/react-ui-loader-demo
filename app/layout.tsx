@@ -25,6 +25,7 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <head />
       <body className="bg-amber-50 dark:bg-gray-800 ">
+        <link rel="icon" href="/favicon.ico" sizes="any" />
         <ThemeProvider
           attribute="class"
           defaultTheme="system"
