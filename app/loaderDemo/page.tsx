@@ -12,6 +12,7 @@ import {
   TooltipTrigger,
 } from "@/components/ui/tooltip";
 import { InfoIcon } from "lucide-react";
+import Footer from "@/components/Footer";
 
 const LoaderDemo = () => {
   const [alert, setAlert] = useState<boolean>(true);
@@ -60,6 +61,7 @@ const LoaderDemo = () => {
           <DemoCard key={index} e={e} />
         ))}
       </div>
+      <Footer />
     </>
   );
 };

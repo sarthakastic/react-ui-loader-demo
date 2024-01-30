@@ -1,4 +1,5 @@
 import { DemoCard } from "@/components/DemoCard";
+import Footer from "@/components/Footer";
 import Sidebar from "@/components/Sidebar";
 import shimmerDemo from "@/lib/ShimmerDemo";
 
@@ -11,6 +12,7 @@ const ShimmerDemo = () => {
           <DemoCard key={index} e={e} />
         ))}
       </div>
+      <Footer />
     </>
   );
 };
